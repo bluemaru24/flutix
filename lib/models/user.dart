@@ -1,6 +1,6 @@
 part of 'models.dart';
 
-class User extends Equatable {
+class UserClass extends Equatable {
   final String id;
   final String email;
   final String name;
@@ -9,11 +9,17 @@ class User extends Equatable {
   final String selectedLanguage;
   final int balance;
 
-  User(this.id, this.email, this.name,
-      {this.profilePicture,
+  UserClass(this.id, this.email,
+      {this.name,
+      this.profilePicture,
       this.balance,
       this.selectedGenres,
       this.selectedLanguage});
+
+  @override
+  String toString() {
+    return "[$id] - $name, $email";
+  }
 
   @override
   List<Object> get props => [

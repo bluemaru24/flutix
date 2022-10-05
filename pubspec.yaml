@@ -35,6 +35,7 @@ dependencies:
   firebase_auth: ^3.10.0
   flutter:
     sdk: flutter
+  provider: ^6.0.3
 
 dev_dependencies:
   flutter_lints: ^2.0.0
